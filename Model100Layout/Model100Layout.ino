@@ -156,10 +156,6 @@ enum {
 	*/
 
 #define PRIMARY_KEYMAP_QWERTY
-// #define PRIMARY_KEYMAP_DVORAK
-// #define PRIMARY_KEYMAP_COLEMAK
-// #define PRIMARY_KEYMAP_CUSTOM
-
 
 /* This comment temporarily turns off astyle's indent enforcement
  *   so we can make the keymaps actually resemble the physical key layout better
@@ -185,8 +181,8 @@ KEYMAPS(
 
 	[SYMBOL] =  KEYMAP_STACKED
 	(___,      				Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,                Key_F5,              Key_F6,
-	 ___,      				XXX,                    XXX,                      Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),       ___,
-	 ___,      				XXX,                    XXX,                      Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
+	 ___,      				LSHIFT(Key_4),          LSHIFT(Key_2),            Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),       ___,
+	 ___,      				LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
 	 ___,      				___,                    XXX,                      Key_LeftBracket,           Key_LeftBracket,       XXX,                 XXX,
 	 ___,      				Key_Delete,             Key_Delete,               ___,
 	 XXX,
@@ -200,8 +196,8 @@ KEYMAPS(
 
 	[NAVIGATION] =  KEYMAP_STACKED
 	(___,      				Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,                Key_F5,             Key_F6,
-	 ___,      				XXX,                    XXX,                      Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),      ___,
-	 ___,      				XXX,                    XXX,                      Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
+	 ___,      				LSHIFT(Key_4),          LSHIFT(Key_2),            Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),      ___,
+	 ___,      				LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
 	 ___,      				___,                    XXX,                      Key_LeftBracket,           Key_RightBracket,      XXX,                XXX,
 	 ___,      				Key_Delete,             Key_Delete,               ___,
 	 ShiftToLayer(SPECIAL),
@@ -257,7 +253,7 @@ enum {
 	CYAN,
 	RED,
 	MAGENTA,
-	BROWN,
+	ORANGE,
 	LIGHT_GRAY,
 	DARK_GRAY,
 	BRIGHT_BLUE,
@@ -278,7 +274,7 @@ PALETTE(
 		CRGB(0x00, 0xaa, 0xaa),  // [0x3] cyan
 		CRGB(0xaa, 0x00, 0x00),  // [0x4] red
 		CRGB(0xaa, 0x00, 0xaa),  // [0x5] magenta
-		CRGB(0xaa, 0x55, 0x00),  // [0x6] brown
+		CRGB(0xFF, 0xA5, 0x00),  // [0x6] orange
 		CRGB(0xaa, 0xaa, 0xaa),  // [0x7] light gray
 		CRGB(0x55, 0x55, 0x55),  // [0x8] dark gray
 		CRGB(0x55, 0x55, 0xff),  // [0x9] bright blue
@@ -294,15 +290,15 @@ COLORMAPS(
 		[PRIMARY] = COLORMAP_STACKED
 		(WHITE,		WHITE, 		WHITE, 		WHITE, 		WHITE, 		WHITE, 		CYAN,
 		 WHITE, 	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
-		 WHITE,   	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
-		 WHITE,   	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
+		 WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
+		 WHITE, 	ORANGE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 CYAN,
 
 		 CYAN,		WHITE,		WHITE, 		WHITE, 		WHITE, 		WHITE, 		MAGENTA,
 		 WHITE, 	WHITE,		WHITE, 		WHITE,  	WHITE,  	WHITE,  	WHITE,
-					WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,   	WHITE,
-		 WHITE,     WHITE,  	WHITE,  	WHITE,   	WHITE,   	WHITE,   	WHITE,
+							WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,   	WHITE,
+		 WHITE,   WHITE,  	WHITE,  	WHITE,   	WHITE,   	ORANGE,   WHITE,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 CYAN),
 
@@ -542,7 +538,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
 	LayerNames,
 
 	// Enables setting, saving (via Chrysalis), and restoring (on boot) the
-  
+	
 	// default LED mode.
 	DefaultLEDModeConfig,
 
@@ -621,11 +617,11 @@ void setup() {
 
 	QUKEYS(
 		kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), Key_LeftControl),    // A/Ctrl
-		kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl),  // Semicolon/Ctrl
+		kaleidoscope::plugin::Qukey(0, KeyAddr(3, 14), Key_RightControl),  // Question Mark/Ctrl
 	)
 	Qukeys.setHoldTimeout(1000);
 	Qukeys.setOverlapThreshold(50);
-	Qukeys.setMinimumHoldTime(250);
+	Qukeys.setMinimumHoldTime(150);
 	Qukeys.setMinimumPriorInterval(80);
 	Qukeys.setMaxIntervalForTapRepeat(50);
 
