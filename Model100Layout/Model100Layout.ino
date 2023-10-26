@@ -134,10 +134,10 @@ enum {
 	*/
 
 enum {
+	SPECIAL,
 	PRIMARY,
 	SYMBOL,
 	NAVIGATION,
-	SPECIAL,
 	NUMPAD
 };  // layers
 
@@ -163,7 +163,22 @@ enum {
 // clang-format off
 
 KEYMAPS(
-	[0] = KEYMAP_STACKED
+	[SPECIAL] =  KEYMAP_STACKED
+	(___,      Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,					Key_F5,							Key_F6,
+	 ___,      XXX,                    XXX,                      XXX,             			XXX,        			Consumer_ScanNextTrack,			___,
+	 ___,      XXX,                    XXX,                      XXX,      					XXX, 					Consumer_PlaySlashPause,
+	 ___,      ___,                    XXX,                      XXX,           			XXX,      				Consumer_ScanPreviousTrack,     XXX,
+	 ___,      Key_Delete,             Key_Delete,               ___,
+	 XXX,
+
+	 Key_F7,	Key_F8,                 Key_F9,                   				Key_F10,					Key_F11,								Key_F12,				___,
+	 XXX,		XXX,                    XXX,                      				XXX,               			XXX,									XXX,					XXX,
+				___,           			LGUI(LCTRL(Key_LeftArrow)),				XXX,						LGUI(LCTRL(Key_RightArrow)),			XXX,					XXX,
+	 ___,		___,					XXX,                 					XXX,						XXX,                					XXX,       				XXX,
+	 ___,		___,					LSHIFT(Key_Minus),        				___,
+	 XXX),
+
+	[PRIMARY] = KEYMAP_STACKED
 	(Key_Esc,				Key_1,            		Key_2,          		Key_3,          			Key_4,          		Key_5,          Key_LeftGui,
 	 Key_Backtick,   		Key_Q,            		Key_W,          		Key_E,          			Key_R,          		Key_T,          Key_Tab,
 	 Key_CapsLock,   		Key_A,            		Key_S,          		Key_D,          			Key_F,          		Key_G,
@@ -208,23 +223,6 @@ KEYMAPS(
 	 ___,					___,					Key_Home,                 XXX,                       Key_End,				XXX,       				___,
 	 ___,					___,					LSHIFT(Key_Minus),        ___,
 	 XXX),
-
-
-	[SPECIAL] =  KEYMAP_STACKED
-	(___,      Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,					Key_F5,							Key_F6,
-	 ___,      XXX,                    XXX,                      XXX,             			XXX,        			Consumer_ScanNextTrack,			___,
-	 ___,      XXX,                    XXX,                      XXX,      					XXX, 					Consumer_PlaySlashPause,
-	 ___,      ___,                    XXX,                      XXX,           			XXX,      				Consumer_ScanPreviousTrack,     XXX,
-	 ___,      Key_Delete,             Key_Delete,               ___,
-	 XXX,
-
-	 Key_F7,	Key_F8,                 Key_F9,                   				Key_F10,					Key_F11,								Key_F12,				___,
-	 XXX,		XXX,                    XXX,                      				XXX,               			XXX,									XXX,					XXX,
-				___,           			LGUI(LCTRL(Key_LeftArrow)),				XXX,						LGUI(LCTRL(Key_RightArrow)),			XXX,					XXX,
-	 ___,		___,					XXX,                 					XXX,						XXX,                					XXX,       				XXX,
-	 ___,		___,					LSHIFT(Key_Minus),        				___,
-	 XXX),
-
 
 	[NUMPAD] =  KEYMAP_STACKED
 	(___, ___, ___, ___, ___, ___, ___,
@@ -287,6 +285,21 @@ PALETTE(
 )
 
 COLORMAPS(
+    [SPECIAL] = COLORMAP_STACKED
+		(WHITE,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		BLACK, 		CYAN,
+		 WHITE, 	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
+		 WHITE,   	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,
+		 WHITE,   	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
+		 WHITE, 	WHITE, 		WHITE, 		WHITE,
+		 CYAN,
+
+		 CYAN,		BLACK,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		MAGENTA,
+		 WHITE, 	BLACK,		BLACK, 		BLACK,  	BLACK,  	BLACK,  	BLACK,
+					BLACK,  	GREEN,  	BLACK,  	GREEN,  	BLACK,   	BLACK,
+		 WHITE,     BLACK,  	BLACK,  	BLACK,   	BLACK,   	BLACK,   	RED,
+		 WHITE, 	WHITE, 		WHITE, 		WHITE,
+		 CYAN),
+
 		[PRIMARY] = COLORMAP_STACKED
 		(WHITE,		WHITE, 		WHITE, 		WHITE, 		WHITE, 		WHITE, 		CYAN,
 		 WHITE, 	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
@@ -318,7 +331,6 @@ COLORMAPS(
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 YELLOW),
 
-
 		[NAVIGATION] = COLORMAP_STACKED
 		(WHITE,		BLUE, 		BLUE, 		BLUE, 		BLUE, 		BLUE, 		CYAN,
 		 WHITE, 	BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,
@@ -333,23 +345,6 @@ COLORMAPS(
 		 WHITE,     BLUE,  		RED,  		BLACK,   	RED,   		BLACK,   	WHITE,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 CYAN),
-
-
-		[SPECIAL] = COLORMAP_STACKED
-		(WHITE,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		BLACK, 		CYAN,
-		 WHITE, 	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
-		 WHITE,   	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,
-		 WHITE,   	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
-		 WHITE, 	WHITE, 		WHITE, 		WHITE,
-		 CYAN,
-
-		 CYAN,		BLACK,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		MAGENTA,
-		 WHITE, 	BLACK,		BLACK, 		BLACK,  	BLACK,  	BLACK,  	BLACK,
-					BLACK,  	GREEN,  	BLACK,  	GREEN,  	BLACK,   	BLACK,
-		 WHITE,     BLACK,  	BLACK,  	BLACK,   	BLACK,   	BLACK,   	RED,
-		 WHITE, 	WHITE, 		WHITE, 		WHITE,
-		 CYAN),
-
 
 		[NUMPAD] =  COLORMAP_STACKED
 		(WHITE, 	WHITE, 		WHITE, 		WHITE, 		WHITE, 		WHITE, 		CYAN,
@@ -653,7 +648,7 @@ void setup() {
 	// // If there's a default layer set in EEPROM, we should set that as the default
 	// // here.
 	// Layer.move(EEPROMSettings.default_layer());
-	Layer.activate(0);
+	Layer.activate(1);
 
 	// Editable layer names are stored in EEPROM too, and we reserve 16 bytes per
 	// layer for them. We need one extra byte per layer for bookkeeping, so we
