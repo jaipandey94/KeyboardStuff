@@ -138,6 +138,7 @@ enum {
 	PRIMARY,
 	SYMBOL,
 	NAVIGATION,
+	GAMING,
 	NUMPAD
 };  // layers
 
@@ -171,7 +172,7 @@ KEYMAPS(
 	 ___,      Key_Delete,             Key_Delete,               ___,
 	 XXX,
 
-	 Key_F7,	Key_F8,                 Key_F9,                   				Key_F10,					Key_F11,								Key_F12,				___,
+	 Key_F7,	Key_F8,                 Key_F9,                   				Key_F10,					Key_F11,								Key_F12,				LockLayer(GAMING),
 	 XXX,		XXX,                    XXX,                      				XXX,               			XXX,									XXX,					XXX,
 				___,           			LGUI(LCTRL(Key_LeftArrow)),				XXX,						LGUI(LCTRL(Key_RightArrow)),			XXX,					XXX,
 	 ___,		___,					XXX,                 					XXX,						XXX,                					XXX,       				XXX,
@@ -223,6 +224,21 @@ KEYMAPS(
 	 ___,					___,					Key_Home,                 XXX,                       Key_End,				XXX,       				___,
 	 ___,					___,					LSHIFT(Key_Minus),        ___,
 	 XXX),
+
+	 [GAMING] = KEYMAP_STACKED
+	(Key_Esc,				Key_1,            		Key_2,          		Key_3,          		Key_4,          			Key_5,          		Key_LeftGui,
+	 XXX, 					Key_Backtick,   		Key_Q,            		Key_W,          		Key_E,          			Key_R,          		Key_T,      
+	 XXX, 					Key_CapsLock,   		Key_A,            		Key_S,          		Key_D,          			Key_F,          		
+	 XXX, 					Key_LeftAlt,    		Key_Z,            		Key_X,          		Key_C,          			Key_V,          		Key_B,
+	 Key_LeftControl,		Key_Backspace,    		Key_Backspace,  		Key_LeftShift,
+	 ShiftToLayer(SYMBOL),
+
+	 Key_RightGui,    		Key_6,            		Key_7,          		Key_8,          			Key_9,          		Key_0,         LockLayer(PRIMARY),
+	 Key_Enter,       		Key_Y,            		Key_U,          		Key_I,          			Key_O,          		Key_P,         Key_Equals,
+							Key_H,            		Key_J,          		Key_K,         	 			Key_L,          		Key_Semicolon, Key_Quote,
+	 Key_RightAlt,    		Key_N,            		Key_M,          		Key_Comma,      			Key_Period,     		Key_Slash,     Key_Minus,
+	 Key_RightShift,  		Key_Spacebar,     		Key_Spacebar,   		Key_RightControl,
+	 ShiftToLayer(NAVIGATION)),
 
 	[NUMPAD] =  KEYMAP_STACKED
 	(___, ___, ___, ___, ___, ___, ___,
@@ -286,14 +302,14 @@ PALETTE(
 
 COLORMAPS(
     [SPECIAL] = COLORMAP_STACKED
-		(WHITE,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		BLACK, 		CYAN,
-		 WHITE, 	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
-		 WHITE,   	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,
-		 WHITE,   	BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
-		 WHITE, 	WHITE, 		WHITE, 		WHITE,
+		(BRIGHT_RED,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		BLACK, 		CYAN,
+		 WHITE, 	      BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
+		 WHITE,   	    BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,
+		 WHITE,   	    BLACK,  	BLACK,  	BLACK,  	BLACK,  	GREEN,  	BLACK,
+		 WHITE, 	      WHITE, 		WHITE, 		WHITE,
 		 CYAN,
 
-		 CYAN,		BLACK,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		MAGENTA,
+		 CYAN,		BLACK,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		BRIGHT_RED,
 		 WHITE, 	BLACK,		BLACK, 		BLACK,  	BLACK,  	BLACK,  	BLACK,
 					BLACK,  	GREEN,  	BLACK,  	GREEN,  	BLACK,   	BLACK,
 		 WHITE,     BLACK,  	BLACK,  	BLACK,   	BLACK,   	BLACK,   	RED,
@@ -343,6 +359,21 @@ COLORMAPS(
 		 WHITE, 	BLUE,		BLUE, 		RED,  		BLUE,  		BLUE,  		BLUE,
 					BLUE,  		RED,  		RED,  		RED,  		BLUE,   	BLUE,
 		 WHITE,     BLUE,  		RED,  		BLACK,   	RED,   		BLACK,   	WHITE,
+		 WHITE, 	WHITE, 		WHITE, 		WHITE,
+		 CYAN),
+
+		 [GAMING] = COLORMAP_STACKED
+		(WHITE,		WHITE, 		WHITE, 		WHITE, 		WHITE, 		WHITE, 		CYAN,
+		 WHITE, 	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
+		 WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
+		 WHITE, 	ORANGE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,
+		 WHITE, 	WHITE, 		WHITE, 		WHITE,
+		 CYAN,
+
+		 CYAN,		WHITE,		WHITE, 		WHITE, 		WHITE, 		WHITE, 		MAGENTA,
+		 WHITE, 	WHITE,		WHITE, 		WHITE,  	WHITE,  	WHITE,  	WHITE,
+							WHITE,  	WHITE,  	WHITE,  	WHITE,  	WHITE,   	WHITE,
+		 WHITE,   WHITE,  	WHITE,  	WHITE,   	WHITE,   	ORANGE,   WHITE,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 CYAN),
 
