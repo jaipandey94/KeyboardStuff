@@ -642,8 +642,8 @@ void setup() {
 	Kaleidoscope.setup();
 
 	QUKEYS(
-		kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), Key_LeftControl),    // A/Ctrl
-		kaleidoscope::plugin::Qukey(0, KeyAddr(3, 14), Key_RightControl),  // Question Mark/Ctrl
+		kaleidoscope::plugin::Qukey(1, KeyAddr(3, 1), Key_LeftControl),    // A/Ctrl
+		kaleidoscope::plugin::Qukey(1, KeyAddr(3, 14), Key_RightControl),  // Question Mark/Ctrl
 	)
 	Qukeys.setHoldTimeout(1000);
 	Qukeys.setOverlapThreshold(50);
