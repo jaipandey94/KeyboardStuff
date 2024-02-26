@@ -182,7 +182,7 @@ KEYMAPS(
 	[PRIMARY] = KEYMAP_STACKED
 	(Key_Esc,				Key_1,            		Key_2,          		Key_3,          			Key_4,          		Key_5,          Key_LeftGui,
 	 Key_Backtick,   		Key_Q,            		Key_W,          		Key_E,          			Key_R,          		Key_T,          Key_Tab,
-	 Key_CapsLock,   		Key_A,            		Key_S,          		Key_D,          			Key_F,          		Key_G,
+	 LSHIFT(Key_Minus),   	Key_A,            		Key_S,          		Key_D,          			Key_F,          		Key_G,
 	 Key_LeftAlt,    		Key_Z,            		Key_X,          		Key_C,          			Key_V,          		Key_B,          Key_Escape,
 	 Key_LeftControl,		Key_Backspace,    		Key_Backspace,  		Key_LeftShift,
 	 ShiftToLayer(SYMBOL),
@@ -198,14 +198,14 @@ KEYMAPS(
 	[SYMBOL] =  KEYMAP_STACKED
 	(___,      				Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,                Key_F5,              Key_F6,
 	 ___,      				LSHIFT(Key_4),          LSHIFT(Key_2),            Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),       ___,
-	 LSHIFT(Key_4),		LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
+	 LSHIFT(Key_Minus),		LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
 	 ___,      				___,                    XXX,                      Key_LeftBracket,           Key_LeftBracket,       XXX,                 XXX,
 	 ___,      				Key_Delete,             Key_Delete,               ___,
 	 XXX,
 
 	 Key_F7,				Key_F8,					Key_F9,                   Key_F10,                   Key_F11,               Key_F12,             ___,
 	 LCTRL(Key_Enter),		Key_Equals,				Key_Minus,        LSHIFT(Key_Comma),         LSHIFT(Key_Period),    XXX,                 ___,
-	    						Key_Minus,				LSHIFT(Key_8),          LSHIFT(Key_7),             Key_Pipe,              ___,                 LSHIFT(Key_Minus),
+	    						Key_Minus,				LSHIFT(Key_8),          LSHIFT(Key_7),             Key_Pipe,              ___,                 LSHIFT(Key_4),
 	 ___,      				___,					Key_Backslash,            Key_Slash,                 ___,                   ___,                 ___,
 	 ___,      				___,					LSHIFT(Key_Minus),        ___,
 	 ShiftToLayer(SPECIAL)),
@@ -213,14 +213,14 @@ KEYMAPS(
 	[NAVIGATION] =  KEYMAP_STACKED
 	(___,      				Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,                Key_F5,             Key_F6,
 	 ___,      				LSHIFT(Key_4),          LSHIFT(Key_2),            Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),      ___,
-	 ___,      				LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
+	 LSHIFT(Key_Minus),   LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
 	 ___,      				___,                    XXX,                      Key_LeftBracket,           Key_RightBracket,      XXX,                XXX,
 	 ___,      				Key_Delete,             Key_Delete,               ___,
 	 ShiftToLayer(SPECIAL),
 
   Key_F7,   				Key_F8,					        Key_F9,                   Key_F10,                   Key_F11,				    Key_F12,				    ___,
 	 LCTRL(Key_Enter),		XXX,                XXX,                      XXX,                       Key_LeftBracket,		Key_RightBracket,		___,
-							      Key_LeftArrow, 					Key_DownArrow,            Key_UpArrow,               Key_RightArrow,		___,					      LSHIFT(Key_Minus),
+							      Key_LeftArrow, 					Key_DownArrow,            Key_UpArrow,               Key_RightArrow,		___,					      LSHIFT(Key_4),
 	 ___,					    Key_Home,					      XXX,                      XXX,                       Key_End,			      XXX,       				   ___,
 	 ___,					    ___,					          LSHIFT(Key_Minus),        ___,
 	 XXX),
