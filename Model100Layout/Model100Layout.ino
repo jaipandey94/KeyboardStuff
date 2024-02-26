@@ -172,10 +172,10 @@ KEYMAPS(
 	 ___,      Key_Delete,             Key_Delete,               ___,
 	 XXX,
 
-	 Key_F7,	Key_F8,                 Key_F9,                   				Key_F10,					Key_F11,								Key_F12,				LockLayer(GAMING),
-	 XXX,		XXX,                    XXX,                      				XXX,               			XXX,									XXX,					XXX,
-				___,           			LGUI(LCTRL(Key_LeftArrow)),				XXX,						LGUI(LCTRL(Key_RightArrow)),			XXX,					XXX,
-	 ___,		___,					XXX,                 					XXX,						XXX,                					XXX,       				XXX,
+	 Key_F7,	Key_F8,                     Key_F9,                   				Key_F10,					Key_F11,								Key_F12,				LockLayer(GAMING),
+	 XXX,		XXX,                          XXX,                      				XXX,               			XXX,									XXX,					XXX,
+				  LGUI(LCTRL(Key_LeftArrow)),   XXX,				XXX,						LGUI(LCTRL(Key_RightArrow)),			XXX,					XXX,
+	 ___,		___,					XXX,                 					XXX,						XXX,                					XXX,       				LCTRL(Key_Pause),
 	 ___,		___,					LSHIFT(Key_Minus),        				___,
 	 XXX),
 
@@ -189,7 +189,7 @@ KEYMAPS(
 
 	 Key_RightGui,    		Key_6,            		Key_7,          		Key_8,          			Key_9,          		Key_0,         LockLayer(NUMPAD),
 	 Key_Enter,       		Key_Y,            		Key_U,          		Key_I,          			Key_O,          		Key_P,         Key_Equals,
-							Key_H,            		Key_J,          		Key_K,         	 			Key_L,          		Key_Semicolon, Key_Quote,
+							          Key_H,            		Key_J,          		Key_K,         	 			Key_L,          		Key_Semicolon, Key_Quote,
 	 Key_RightAlt,    		Key_N,            		Key_M,          		Key_Comma,      			Key_Period,     		Key_Slash,     Key_Minus,
 	 Key_RightShift,  		Key_Spacebar,     		Key_Spacebar,   		Key_RightControl,
 	 ShiftToLayer(NAVIGATION)),
@@ -198,14 +198,14 @@ KEYMAPS(
 	[SYMBOL] =  KEYMAP_STACKED
 	(___,      				Key_F1,                 Key_F2,                   Key_F3,                    Key_F4,                Key_F5,              Key_F6,
 	 ___,      				LSHIFT(Key_4),          LSHIFT(Key_2),            Key_LeftParen,             Key_RightParen,        LSHIFT(Key_1),       ___,
-	 ___,      				LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
+	 LSHIFT(Key_4),		LSHIFT(Key_5),          LSHIFT(Key_3),            Key_LeftCurlyBracket,      Key_RightCurlyBracket, LSHIFT(Key_Equals),
 	 ___,      				___,                    XXX,                      Key_LeftBracket,           Key_LeftBracket,       XXX,                 XXX,
 	 ___,      				Key_Delete,             Key_Delete,               ___,
 	 XXX,
 
 	 Key_F7,				Key_F8,					Key_F9,                   Key_F10,                   Key_F11,               Key_F12,             ___,
-	 LCTRL(Key_Enter),		Key_Equals,				Key_Minus,                LSHIFT(Key_Comma),         LSHIFT(Key_Period),    XXX,                 ___,
-							Key_Minus,				LSHIFT(Key_8),            LSHIFT(Key_7),             Key_Pipe,              ___,                 ___,
+	 LCTRL(Key_Enter),		Key_Equals,				Key_Minus,        LSHIFT(Key_Comma),         LSHIFT(Key_Period),    XXX,                 ___,
+	    						Key_Minus,				LSHIFT(Key_8),          LSHIFT(Key_7),             Key_Pipe,              ___,                 LSHIFT(Key_Minus),
 	 ___,      				___,					Key_Backslash,            Key_Slash,                 ___,                   ___,                 ___,
 	 ___,      				___,					LSHIFT(Key_Minus),        ___,
 	 ShiftToLayer(SPECIAL)),
@@ -218,11 +218,11 @@ KEYMAPS(
 	 ___,      				Key_Delete,             Key_Delete,               ___,
 	 ShiftToLayer(SPECIAL),
 
-	 Key_F7,   				Key_F8,					Key_F9,                   Key_F10,                   Key_F11,				Key_F12,				___,
-	 LCTRL(Key_Enter),		XXX,                    XXX,                      Key_UpArrow,               Key_LeftBracket,		Key_RightBracket,		___,
-							___, 					Key_LeftArrow,            Key_DownArrow,             Key_RightArrow,		___,					___,
-	 ___,					___,					Key_Home,                 XXX,                       Key_End,				XXX,       				___,
-	 ___,					___,					LSHIFT(Key_Minus),        ___,
+  Key_F7,   				Key_F8,					        Key_F9,                   Key_F10,                   Key_F11,				    Key_F12,				    ___,
+	 LCTRL(Key_Enter),		XXX,                XXX,                      XXX,                       Key_LeftBracket,		Key_RightBracket,		___,
+							      Key_LeftArrow, 					Key_DownArrow,            Key_UpArrow,               Key_RightArrow,		___,					      LSHIFT(Key_Minus),
+	 ___,					    Key_Home,					      XXX,                      XXX,                       Key_End,			      XXX,       				   ___,
+	 ___,					    ___,					          LSHIFT(Key_Minus),        ___,
 	 XXX),
 
 	 [GAMING] = KEYMAP_STACKED
@@ -311,8 +311,8 @@ COLORMAPS(
 
 		 CYAN,		BLACK,		BLACK, 		BLACK, 		BLACK, 		BLACK, 		BRIGHT_RED,
 		 WHITE, 	BLACK,		BLACK, 		BLACK,  	BLACK,  	BLACK,  	BLACK,
-					BLACK,  	GREEN,  	BLACK,  	GREEN,  	BLACK,   	BLACK,
-		 WHITE,     BLACK,  	BLACK,  	BLACK,   	BLACK,   	BLACK,   	RED,
+					    GREEN,  	BLACK,  	BLACK,  	GREEN,  	BLACK,   	BLACK,
+		 WHITE,   BLACK,  	BLACK,  	BLACK,   	BLACK,   	BLACK,   	RED,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 CYAN),
 
@@ -350,15 +350,15 @@ COLORMAPS(
 		[NAVIGATION] = COLORMAP_STACKED
 		(WHITE,		BLUE, 		BLUE, 		BLUE, 		BLUE, 		BLUE, 		CYAN,
 		 WHITE, 	BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,
-		 WHITE,   	BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,
-		 WHITE,   	BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,
+		 WHITE,   BLUE,  	BLUE,  		BLUE,  		BLUE,  		BLUE,
+		 WHITE,   BLUE,  	BLUE,  		BLUE,  		BLUE,  		BLUE,  		BLUE,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 YELLOW,
 
-		 CYAN,		BLUE,		BLUE, 		BLUE, 		BLUE, 		BLUE, 		MAGENTA,
-		 WHITE, 	BLUE,		BLUE, 		RED,  		BLUE,  		BLUE,  		BLUE,
-					BLUE,  		RED,  		RED,  		RED,  		BLUE,   	BLUE,
-		 WHITE,     BLUE,  		RED,  		BLACK,   	RED,   		BLACK,   	WHITE,
+		 CYAN, 		BLUE,		BLUE, 		BLUE, 		BLUE, 		BLUE, 		MAGENTA,
+		 WHITE, 	BLUE,		BLUE, 		BLACK,  	BLUE,  		BLUE,  		BLUE,
+					    RED,  	RED,  		RED,  		RED,  		BLUE,   	BLUE,
+		 WHITE,   RED,  	BLUE,  		BLACK,   	RED,   		BLACK,   	WHITE,
 		 WHITE, 	WHITE, 		WHITE, 		WHITE,
 		 CYAN),
 
