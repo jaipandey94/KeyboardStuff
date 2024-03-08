@@ -1,4 +1,8 @@
+* Base Layer
 <base>
+[eql]>[esc]
+[tab]>[esc]
+[esc]>[null]
 [del]>[fn1s]
 [ent]>[fn2s]
 [end]>[lshf]
@@ -13,7 +17,10 @@
 [cbrk]>[null]
 [grav]>[null]
 [caps]>[null]
+{hk3}>{s4}{-rwin}{-lctr}{rght}{+rwin}{+lctr}
+{hk1}>{s4}{-rwin}{-lctr}{left}{+rwin}{+lctr}
 <keypad>
+* Symbol Layer
 <function1>
 [hk4]>[ent]
 [y]>[eql]
@@ -37,9 +44,15 @@
 {e}>{s9}{-lshf}{9}{+lshf}
 {r}>{s9}{-lshf}{0}{+lshf}
 {t}>{s9}{-lshf}{1}{+lshf}
+{t}>{s9}{-lshf}{1}{+lshf}
 {spc}>{s9}{-lshf}{hyph}{+lshf}
 {o}>{s9}{-lshf}{perd}{+lshf}
 {i}>{s9}{-lshf}{comm}{+lshf}
+{esc}>{s9}{-lshf}{hyph}{+lshf}
+{apos}>{s9}{-lshf}{4}{+lshf}
+{a}>{s9}{-lshf}{5}{+lshf}
+{q}>{s9}{-lshf}{4}{+lshf}
+* Navigation Layer
 <function2>
 [hk4]>[ent]
 [h]>[left]
@@ -66,4 +79,10 @@
 {r}>{s9}{-lshf}{0}{+lshf}
 {t}>{s9}{-lshf}{1}{+lshf}
 {spc}>{s9}{-lshf}{hyph}{+lshf}
+{esc}>{s9}{-lshf}{hyph}{+lshf}
+{apos}>{s9}{-lshf}{4}{+lshf}
+{a}>{s9}{-lshf}{5}{+lshf}
+{q}>{s9}{-lshf}{4}{+lshf}
 <function3>
+{l}>{s9}{-lctr}{rwin}{rght}{+lshf}
+{h}>{s9}{-lctr}{rwin}{left}{+lshf}
