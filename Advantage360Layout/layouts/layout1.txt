@@ -7,8 +7,8 @@
 [pgdn]>[rshf]
 [hk4]>[ent]
 [hk2]>[tab]
-[lfn]>[lalt]
-[rfn]>[ralt]
+[lfn]>[lctr]
+[rfn]>[rctr]
 [up]>[null]
 [down]>[null]
 [left]>[null]
@@ -39,6 +39,8 @@
 [cbrk]>[rctr]
 [grav]>[lctr]
 [caps]>[null]
+[lfn]>[lctr]
+[rfn]>[rctr]
 {d}>{s9}{-lshf}{obrk}{+lshf}
 [m]>[bsls]
 [comm]>[fsls]
@@ -82,6 +84,8 @@
 [obrk]>[null]
 [cbrk]>[rctr]
 [grav]>[lctr]
+[lfn]>[lctr]
+[rfn]>[rctr]
 [caps]>[null]
 {d}>{s9}{-lshf}{obrk}{+lshf}
 {f}>{s9}{-lshf}{cbrk}{+lshf}
