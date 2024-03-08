@@ -14,8 +14,8 @@
 [left]>[null]
 [rght]>[null]
 [obrk]>[null]
-[cbrk]>[null]
-[grav]>[null]
+[cbrk]>[rctr]
+[grav]>[lctr]
 [caps]>[null]
 {hyph}>{s4}{-rwin}{-lctr}{rght}{+rwin}{+lctr}
 {eql}>{s4}{-rwin}{-lctr}{left}{+rwin}{+lctr}
@@ -36,8 +36,8 @@
 [rght]>[null]
 [ent]>[null]
 [obrk]>[null]
-[cbrk]>[null]
-[grav]>[null]
+[cbrk]>[rctr]
+[grav]>[lctr]
 [caps]>[null]
 {d}>{s9}{-lshf}{obrk}{+lshf}
 [m]>[bsls]
@@ -80,8 +80,8 @@
 [rght]>[null]
 [ent]>[null]
 [obrk]>[null]
-[cbrk]>[null]
-[grav]>[null]
+[cbrk]>[rctr]
+[grav]>[lctr]
 [caps]>[null]
 {d}>{s9}{-lshf}{obrk}{+lshf}
 {f}>{s9}{-lshf}{cbrk}{+lshf}
