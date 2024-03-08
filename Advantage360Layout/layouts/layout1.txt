@@ -1,8 +1,8 @@
 * Base Layer
 <base>
-[tab]>[grav]
 [del]>[fn1s]
 [ent]>[fn2s]
+[tab]>[grav]
 [end]>[lshf]
 [pgdn]>[rshf]
 [hk4]>[ent]
@@ -22,7 +22,9 @@
 <keypad>
 * Symbol Layer
 <function1>
-[hk4]>[ent]
+[tab]>[grav]
+[end]>[lshf]
+[pgdn]>[rshf]
 [y]>[eql]
 [u]>[hyph]
 [c]>[obrk]
@@ -56,8 +58,12 @@
 {apos}>{s9}{-lshf}{4}{+lshf}
 {a}>{s9}{-lshf}{5}{+lshf}
 {q}>{s9}{-lshf}{4}{+lshf}
+{hk4}>{s9}{-lctr}{ent}{+lctr}
 * Navigation Layer
 <function2>
+[tab]>[grav]
+[end]>[lshf]
+[pgdn]>[rshf]
 [hk4]>[ent]
 [h]>[left]
 [j]>[down]
@@ -88,6 +94,5 @@
 {apos}>{s9}{-lshf}{4}{+lshf}
 {a}>{s9}{-lshf}{5}{+lshf}
 {q}>{s9}{-lshf}{4}{+lshf}
+{hk4}>{s9}{-lctr}{ent}{+lctr}
 <function3>
-{l}>{s9}{-lctr}{rwin}{rght}{+lshf}
-{h}>{s9}{-lctr}{rwin}{left}{+lshf}
