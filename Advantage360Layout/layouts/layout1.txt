@@ -1,12 +1,14 @@
 * Base Layer
 <base>
-[tab]>[esc]
+[tab]>[grav]
 [del]>[fn1s]
 [ent]>[fn2s]
 [end]>[lshf]
 [pgdn]>[rshf]
 [hk4]>[ent]
 [hk2]>[tab]
+[lfn]>[lalt]
+[rfn]>[ralt]
 [up]>[null]
 [down]>[null]
 [left]>[null]
