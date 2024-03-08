@@ -2,7 +2,6 @@
 <base>
 [eql]>[esc]
 [tab]>[esc]
-[esc]>[null]
 [del]>[fn1s]
 [ent]>[fn2s]
 [end]>[lshf]
