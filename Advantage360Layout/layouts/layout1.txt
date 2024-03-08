@@ -64,6 +64,9 @@
 {apos}>{s9}{-lshf}{4}{+lshf}
 {a}>{s9}{-lshf}{5}{+lshf}
 {q}>{s9}{-lshf}{4}{+lshf}
+{grav}>{s9}{-lshf}{grav}{+lshf}
+{scol}>{s9}{-lshf}{scol}{+lshf}
+{apos}>{s9}{-lshf}{apos}{+lshf}
 {hk4}>{s9}{-lctr}{ent}{+lctr}
 * Navigation Layer
 <function2>
@@ -104,5 +107,8 @@
 {apos}>{s9}{-lshf}{4}{+lshf}
 {a}>{s9}{-lshf}{5}{+lshf}
 {q}>{s9}{-lshf}{4}{+lshf}
+{grav}>{s9}{-lshf}{grav}{+lshf}
+{scol}>{s9}{-lshf}{scol}{+lshf}
+{apos}>{s9}{-lshf}{apos}{+lshf}
 {hk4}>{s9}{-lctr}{ent}{+lctr}
 <function3>
