@@ -1,6 +1,5 @@
 * Base Layer
 <base>
-[eql]>[esc]
 [tab]>[esc]
 [del]>[fn1s]
 [ent]>[fn2s]
@@ -16,8 +15,8 @@
 [cbrk]>[null]
 [grav]>[null]
 [caps]>[null]
-{hk3}>{s4}{-rwin}{-lctr}{rght}{+rwin}{+lctr}
-{hk1}>{s4}{-rwin}{-lctr}{left}{+rwin}{+lctr}
+{hyph}>{s4}{-rwin}{-lctr}{rght}{+rwin}{+lctr}
+{eql}>{s4}{-rwin}{-lctr}{left}{+rwin}{+lctr}
 <keypad>
 * Symbol Layer
 <function1>
@@ -47,6 +46,10 @@
 {spc}>{s9}{-lshf}{hyph}{+lshf}
 {o}>{s9}{-lshf}{perd}{+lshf}
 {i}>{s9}{-lshf}{comm}{+lshf}
+{j}>{s9}{-lshf}{8}{+lshf}
+{k}>{s9}{-lshf}{7}{+lshf}
+{l}>{s9}{-lshf}{bsls}{+lshf}
+{g}>{s9}{-lshf}{eql}{+lshf}
 {esc}>{s9}{-lshf}{hyph}{+lshf}
 {apos}>{s9}{-lshf}{4}{+lshf}
 {a}>{s9}{-lshf}{5}{+lshf}
@@ -77,6 +80,7 @@
 {e}>{s9}{-lshf}{9}{+lshf}
 {r}>{s9}{-lshf}{0}{+lshf}
 {t}>{s9}{-lshf}{1}{+lshf}
+{g}>{s9}{-lshf}{eql}{+lshf}
 {spc}>{s9}{-lshf}{hyph}{+lshf}
 {esc}>{s9}{-lshf}{hyph}{+lshf}
 {apos}>{s9}{-lshf}{4}{+lshf}
