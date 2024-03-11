@@ -93,8 +93,6 @@
 [up]>[null]
 [rght]>[null]
 [ent]>[null]
-[n]>[null]
-[b]>[null]
 [obrk]>[null]
 [cbrk]>[rctr]
 [grav]>[lctr]
