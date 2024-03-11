@@ -9,6 +9,7 @@
 [pgup]>[rshf]
 [hk4]>[ent]
 [hk2]>[tab]
+[hk3]>[caps]
 [lfn]>[lctr]
 [rfn]>[rctr]
 [up]>[paus]
