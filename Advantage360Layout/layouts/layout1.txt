@@ -18,7 +18,6 @@
 [cbrk]>[rctr]
 [grav]>[lctr]
 [caps]>[null]
-[kp]>[rwin]
 {hyph}>{s4}{-rwin}{-lctr}{rght}{+rwin}{+lctr}
 {eql}>{s4}{-rwin}{-lctr}{left}{+rwin}{+lctr}
 <keypad>
