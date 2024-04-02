@@ -51,6 +51,7 @@
 {d}>{s9}{-lshf}{obrk}{+lshf}
 [m]>[bsls]
 [comm]>[fsls]
+[h]>[hyph]
 {f}>{s9}{-lshf}{cbrk}{+lshf}
 {e}>{s9}{-lshf}{9}{+lshf}
 {r}>{s9}{-lshf}{0}{+lshf}
