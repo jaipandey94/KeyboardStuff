@@ -17,11 +17,9 @@
 [obrk]>[null]
 [cbrk]>[rctr]
 [grav]>[lctr]
-[caps]>[play]
 [left]>[prev]
 [rght]>[next]
-{hyph}>{s4}{-rwin}{-lctr}{rght}{+rwin}{+lctr}
-{eql}>{s4}{-rwin}{-lctr}{left}{+rwin}{+lctr}
+[caps]>[play]
 <keypad>
 * Symbol Layer
 <function1>
@@ -35,7 +33,6 @@
 [c]>[obrk]
 [v]>[cbrk]
 [bspc]>[del]
-[up]>[paus]
 [down]>[null]
 [left]>[null]
 [rght]>[null]
@@ -44,7 +41,7 @@
 [m]>[null]
 [b]>[null]
 [perd]>[end]
-[obrk]>[null]
+[obrk]>[paus]
 [cbrk]>[rctr]
 [grav]>[lctr]
 [caps]>[null]
