@@ -3,8 +3,6 @@
 [del]>[fn1s]
 [ent]>[fn2s]
 [tab]>[grav]
-[end]>[lshf]
-[pgdn]>[rshf]
 [home]>[lshf]
 [pgup]>[rshf]
 [hk4]>[ent]
@@ -24,8 +22,6 @@
 * Symbol Layer
 <function1>
 [tab]>[grav]
-[end]>[lshf]
-[pgdn]>[rshf]
 [home]>[lshf]
 [pgup]>[rshf]
 [y]>[eql]
@@ -74,8 +70,6 @@
 * Navigation Layer
 <function2>
 [tab]>[grav]
-[end]>[lshf]
-[pgdn]>[rshf]
 [home]>[lshf]
 [pgup]>[rshf]
 [hk4]>[ent]
@@ -89,6 +83,8 @@
 [m]>[null]
 [comm]>[null]
 [perd]>[end]
+[end]>[lshf]
+[pgdn]>[rshf]
 [bspc]>[del]
 [up]>[paus]
 [down]>[up]
