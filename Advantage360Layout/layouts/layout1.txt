@@ -67,6 +67,7 @@
 {scol}>{s9}{-lshf}{scol}{+lshf}
 {apos}>{s9}{-lshf}{apos}{+lshf}
 {hk4}>{s9}{-lctr}{ent}{+lctr}
+[kp]>[rwin]
 * Navigation Layer
 <function2>
 [tab]>[grav]
@@ -110,4 +111,5 @@
 {scol}>{s9}{-lshf}{scol}{+lshf}
 {apos}>{s9}{-lshf}{apos}{+lshf}
 {hk4}>{s9}{-lctr}{ent}{+lctr}
+[kp]>[rwin]
 <function3>
