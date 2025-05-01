@@ -18,7 +18,7 @@
 [left]>[prev]
 [rght]>[next]
 [caps]>[play]
-<keypad>
+[kp]>[rwin]
 * Symbol Layer
 <function1>
 [tab]>[grav]
